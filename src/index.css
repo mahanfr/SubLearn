@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "vazirmatn-regular";
+    src: local("Vazirmatn-Regular"), 
+        url("./fonts/Vazirmatn-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "reemkufi-regular";
+    src: local("ReemKufi-Regular"),
+        url("./fonts/ReemKufi-Regular.ttf") format("truetype");
+}
