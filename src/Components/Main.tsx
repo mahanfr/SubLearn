@@ -57,29 +57,29 @@ const Main = (props: IProps) => {
 
   return (
     <>
-      <div className='flex flex-col items-center mt-10 mb-5'>
-        <h1 dir='rtl' className='w-11/12 md:w-1/2 text-center font-semibold text-2xl md:text-3xl'>
-          آموزش زبان انگلیسی با استفاده از زیرنویس فیلم های سینمایی و سریالی
+      <div className='flex flex-col items-center pt-10 mb-5'>
+        <h1 className='w-11/12 md:w-1/2 text-center font-semibold text-2xl md:text-3xl'>
+        Learn English Using Your Favourite Movies And Tv Shows
         </h1>
-        <h3 dir='rtl' className='w-11/12 md:w-2/3 text-center md:text-lg my-10'>
+        <h3 className='w-11/12 md:w-2/3 text-center md:text-lg my-10'>
           <span>
-            یادگیری زبان انگلیسی با استفاده از فیلم های سینمایی یکی از بهترین راهکار ها برای به چالش کشیدن دانش زبان آموز و یادگیری موثر می باشد.
+            Movies and Tv Shows are one of the most affective ways to learn a new language like English.
           </span>
           <span>
-            این ابزار به شما کمک می کند تا فیلم هایی را که با سطح زبانی شما هماهنگ می باشند را پیدا کرده
+            This tool helps you learn new words based on your preferred level
           </span>
           <span> </span>
           <span>
-            و یا کلمات جدید به کار رفته در فیلم مورد نظر خود را قبل از مشاهده آن، تمرین کنید
+            or to practice new words of a movie before watching it for the first time
           </span>
           .
         </h3>
         <h3 dir='rtl' className='text-center mx-3'>
-          <span>میزان دقت مورد نظر برای تشخیص کلمات دشوار را وارد کنید:</span>
+          <span>Please Enter Your Preferred Level:</span>
           <span className='font-semibold'> {levelValue}%</span>
         </h3>
         <div className='w-11/12 md:w-1/2 flex flex-row'>
-          <h6 className='mx-2 font-semibold'>مبتدی</h6>
+          <h6 className='mx-2 font-semibold'>Elementary</h6>
           <input className='w-full'
             onChange={(event) => { setLevelValue(+event.target.value) }}
             type="range"
@@ -87,11 +87,11 @@ const Main = (props: IProps) => {
             min="0"
             max="99"
             value={levelValue} />
-          <h6 className='mx-2 font-semibold'>پیشرفته</h6>
+          <h6 className='mx-2 font-semibold'>Advanced</h6>
         </div>
         <div className='md:w-1/2 p-4'>
-          <h3 dir='rtl' className='p-4 rounded-md text-gray-600' style={{ backgroundColor: "#cce5ff" }}>
-            میزان مهارت زبان آموزان بر اساس تعداد کلماتی که به آن آشنایی دارند شناخته می شود. کاربران می توانند با انتخاب میزان توانایی خود یک مقدار بین 0 تا 100 را انتخاب کنند این مقیاس بین 5 تا 50 هزار کلمه متغیر است و نتایج نهایی بر این اساس مشخص می گردد.
+          <h3 className='p-3 rounded-md text-gray-600' style={{ backgroundColor: "#cce5ff" }}>
+          The Preferred Level of user should be selected based on number of words in their vocabulary. This Scale can be adjusted between 5K to 300K words normlaized between 0 to 100.
           </h3>
         </div>
 
@@ -107,8 +107,8 @@ const Main = (props: IProps) => {
                 />
                 <p>subtile file *.srt</p>
                 <div className='md:w-1/2 p-4'>
-                  <h3 dir='rtl' className='p-4 rounded-md text-right text-gray-600' style={{ backgroundColor: "#cce5ff" }}>
-                    برای آغاز پردازش فایل زیرنویس خود را در قسمت مشخص شده بارگزاری نمایید. فایل های آپلود شده باید به فرمت srt و به زبان انگلیسی باشند. فایل های زیرنویس می توانند از هر نوع منبعی تهیه شده باشند اما برای تجربه بهتر می توانید از زیرنویس های opensubtitle استفاده کنید.
+                  <h3 className='p-3 rounded-md text-left text-gray-600' style={{ backgroundColor: "#cce5ff" }}>
+                  To Get Started please upload your srt file inside the highlighted section. For better support please use subtitle files downloaded from opensubtitle.org.
                   </h3>
                 </div>
               </div>
@@ -133,12 +133,12 @@ const Main = (props: IProps) => {
             </div>
         }
       </div>
-      <div className='text-right text-black md:mx-40 sm:mx-20 mx-3 mt-5'>
-        <h3 className='font-bold my-2 text-2xl'>منابع</h3>
+      <div className='pb-20 text-left text-black md:mx-40 sm:mx-20 mx-3 mt-5'>
+        <h3 className='font-bold my-2 text-2xl'>Sources</h3>
         <hr />
-        <h3 className='my-2' dir='rtl'>
+        <h3 className='my-2'>
           <span>
-            مجموعه فرکانس کلمات: 
+          English Word Frequency:
           </span>
           <a href='https://www.kaggle.com/datasets/rtatman/english-word-frequency'> https://www.kaggle.com/datasets/rtatman/english-word-frequency</a>
         </h3>

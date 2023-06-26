@@ -52,11 +52,7 @@ const App = () => {
       {alert.length > 0 &&
         <Alert/>
       }
-      <section className='pb-20'>
-        <TopNavBar onMyWordsClick={()=>{setMyWordsTab(!myWordsTab)}} />
-        {myWordsTab && 
-          <MyWords />
-        }
+      <section className=''>
         <Main onWordListUpdate={onWordListUpdate} onAlert={onSetAlert}/>
         <Footer />
       </section>

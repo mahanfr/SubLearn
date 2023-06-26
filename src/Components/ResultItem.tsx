@@ -29,14 +29,14 @@ const ResultItem = (props: IProps) => {
       </div>
       {/* {isOpen && */}
         <div className='px-5 py-3'>
-          <h5 dir='rtl' className='font-bold text-sm'>معنی:</h5>
+          <h5 className='font-bold text-sm'>Meaning:</h5>
           {props.item.defenition === "" ? 
             "Not Available" : 
             props.item.defenition
           }
-          <h5 dir='rtl' className='font-bold text-sm'>زمان مشاهده در فیلم:</h5>
+          <h5 className='font-bold text-sm'>Shown in Move at:</h5>
           <h5 className='font-bold'>{props.item.time}</h5>
-          <h5 dir='rtl' className='font-bold text-sm'>درصد سختی:</h5>
+          <h5 className='font-bold text-sm'>Difficulty level:</h5>
           <h5 className='font-bold'>% {props.item.sort_val.toFixed(3)}</h5>
         </div>
       {/* } */}
